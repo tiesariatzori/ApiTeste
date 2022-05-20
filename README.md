@@ -5,6 +5,8 @@ Para utilizar o projeto precisa do Xamp , Composer e Laravel.
 
 Abaixe o Projeto no C:/xampp/htdocs/.
 
+Composer install no diretorio do projeto
+
 Faça uma copia da .env.exemple  e renomeie para .env
 
 no local C:\Windows\System32\drivers\etc coloque no arquivo hosts:
