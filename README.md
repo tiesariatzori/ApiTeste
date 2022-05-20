@@ -27,4 +27,9 @@ no local C:\xampp\apache\conf\extra coloque no arquivo httpd-vhosts:
                 Require all granted
         </Directory>
 
+
 </VirtualHost>
+</VirtualHost>
+
+
+Rota para os testes  http://seuendereco.com/search/local/, precisa informar pelo menos 1 Cep
