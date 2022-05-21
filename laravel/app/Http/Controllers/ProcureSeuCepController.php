@@ -21,8 +21,10 @@ class ProcureSeuCepController extends Controller
 
         foreach ($ceps as $key => $cep) {
 
+            $cep = preg_replace('/[^0-9]/', '', $cep);
             $cep = str_replace('-', '', $cep);
             $cep = str_replace(' ', '', $cep);
+            dd($cep);
 
             $posicao = $key + 1;
 
@@ -33,7 +35,7 @@ class ProcureSeuCepController extends Controller
 
             $ch = curl_init();
 
-            curl_setopt($ch, CURLOPT_URL, "https://viacep.com.br/ws/" .$cep. "/json/");
+            curl_setopt($ch, CURLOPT_URL, "https://viacep.com.br/ws/" . $cep . "/json/");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_HEADER, false);
 
