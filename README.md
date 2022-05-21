@@ -17,7 +17,7 @@ no local C:\xampp\apache\conf\extra coloque no arquivo httpd-vhosts:
 
 
  
- <VirtualHost *:80>
+ <VirtualHost *:80><VirtualHost>
  
         ServerAdmin tete.atzori.alves@gmail.com
         DocumentRoot "C:/xampp/htdocs/Laravel/public"
@@ -31,7 +31,7 @@ no local C:\xampp\apache\conf\extra coloque no arquivo httpd-vhosts:
                 Require all granted
         </Directory>
         
-<VirtualHost>
+
  
  
 Apos essa etapa pare o apache do xamp e ligue ele novamente para reconhecer as mudanças.
