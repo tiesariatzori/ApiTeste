@@ -15,7 +15,9 @@ no local C:\Windows\System32\drivers\etc coloque no arquivo hosts:
 
 no local C:\xampp\apache\conf\extra coloque no arquivo httpd-vhosts: 
 
-<VirtualHost *:80>
+ tire as setinhas
+ 
+-> <VirtualHost *:80>
 
         ServerAdmin tete.atzori.alves@gmail.com
         DocumentRoot "C:/xampp/htdocs/Laravel/public"
@@ -30,8 +32,10 @@ no local C:\xampp\apache\conf\extra coloque no arquivo httpd-vhosts:
         </Directory>
 
 
-</VirtualHost>
-</VirtualHost>
 
+ -> </VirtualHost>
 
-Rota para os testes  http://seuendereco.com/search/local/, precisa informar pelo menos 1 Cep
+Apos essa etapa pare o apache do xamp e ligue ele novamente para reconhecer as mudanças.
+
+Rota para os testes  http://seuendereco.com/search/local/, precisa informar pelo menos 1 Cep.
+
