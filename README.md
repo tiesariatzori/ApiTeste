@@ -32,7 +32,7 @@ no local C:\xampp\apache\conf\extra coloque no arquivo httpd-vhosts:
         </Directory>
         
         
-<VirtualHost>
+--><VirtualHost>-->
  
  
 Apos essa etapa pare o apache do xamp e ligue ele novamente para reconhecer as mudanças.
