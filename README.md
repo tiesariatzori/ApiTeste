@@ -37,3 +37,5 @@ Apos essa etapa pare o apache do xamp e ligue ele novamente para reconhecer as m
 
 Rota para os testes  http://seuendereco.com/search/local/, precisa informar pelo menos 1 Cep.
 
+Fiz com que mesmo que você coloque cep errado ele vai te retornar aqueles que estão certo , se quer que isso não aconteceça apenas remova continue e coloque 
+return error.
