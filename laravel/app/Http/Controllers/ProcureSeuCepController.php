@@ -24,7 +24,6 @@ class ProcureSeuCepController extends Controller
             $cep = preg_replace('/[^0-9]/', '', $cep);
             $cep = str_replace('-', '', $cep);
             $cep = str_replace(' ', '', $cep);
-            dd($cep);
 
             $posicao = $key + 1;
 
@@ -47,7 +46,12 @@ class ProcureSeuCepController extends Controller
 
             $response = curl_exec($ch);
             curl_close($ch);
-            $data[] = json_decode($response, true);
+
+            if (isset($response)) {
+                $data[] = json_decode($response, true);
+            } else {
+                $error[] = "Cep na posição " . $posicao . "não foi encontrado";
+            }
         }
 
         $data = array_merge($data, $error);
