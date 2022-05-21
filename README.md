@@ -17,8 +17,7 @@ no local C:\xampp\apache\conf\extra coloque no arquivo httpd-vhosts:
 
 
  
- <VirtualHost *:80> 
- 
+       <VirtualHost *:80> 
         ServerAdmin tete.atzori.alves@gmail.com
         DocumentRoot "C:/xampp/htdocs/Laravel/public"
         ServerName seuendereco.com
